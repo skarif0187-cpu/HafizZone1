@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "198215696377",
+    "project_id": "hafizzone",
+    "storage_bucket": "hafizzone.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:198215696377:android:7342d9edf405e2d5a94728",
+        "android_client_info": {
+          "package_name": "com.hafizzone.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgUE1_EsmV0SbUgSP-6iYFXBSsktDa5eg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
