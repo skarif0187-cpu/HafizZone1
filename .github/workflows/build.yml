@@ -18,6 +18,8 @@ jobs:
       - run: unzip -q HafizZone.zip
       - run: cp firebase-config.js HafizZone/www/firebase-config.js
       - run: cd HafizZone && npm install && npx cap add android && npx cap sync android
+      - run: cp google-services.json HafizZone/android/app/google-services.json
+      - run: sed -i 's#<application#<uses-permission android:name="android.permission.POST_NOTIFICATIONS" />\n    <application#' HafizZone/android/app/src/main/AndroidManifest.xml
       - run: cd HafizZone/android && chmod +x gradlew && ./gradlew assembleDebug
       - uses: actions/upload-artifact@v4
         with:
