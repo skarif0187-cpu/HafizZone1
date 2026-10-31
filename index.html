@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#070d1f">
+<title>HafizZone ডাউনলোড</title>
+<style>
+:root{color-scheme:dark;--ink:#070d1f;--navy:#12224b;--blue:#2f6bff;--ice:#d6e4ff;--mu:#93a4cf}
+*{box-sizing:border-box;margin:0}
+body{background:var(--ink);color:var(--ice);font:17px/1.65 "Noto Sans Bengali","Hind Siliguri",system-ui,sans-serif;padding:0 20px 56px}
+main{max-width:520px;margin:0 auto}
+h1{font-size:44px;line-height:1.1;letter-spacing:-1px;color:#fff;padding-top:48px}
+.lead{color:var(--mu);margin:10px 0 26px}
+.chat{display:flex;flex-direction:column;gap:6px;margin-bottom:30px}
+.b{max-width:78%;padding:9px 15px;border-radius:20px}
+.me{align-self:flex-end;background:var(--blue);color:#fff;border-bottom-right-radius:6px}
+.fr{align-self:flex-start;background:var(--navy);border-bottom-left-radius:6px}
+.dl{display:block;text-align:center;background:var(--blue);color:#fff;text-decoration:none;font-size:20px;font-weight:700;padding:18px;border-radius:20px}
+.dl:focus-visible,summary:focus-visible{outline:3px solid #fff;outline-offset:3px}
+.meta{color:var(--mu);font-size:14px;text-align:center;margin:10px 0 40px}
+h2{font-size:22px;color:#fff;margin:0 0 14px}
+ol{list-style:none;padding:0;margin:0 0 40px;border-left:2px solid var(--navy)}
+li{padding:0 0 14px 22px;position:relative}
+li::before{content:counter(s);counter-increment:s;position:absolute;left:-13px;top:2px;width:24px;height:24px;border-radius:50%;background:var(--navy);color:#fff;font-size:13px;text-align:center;line-height:24px}
+ol{counter-reset:s}
+details{border-top:1px solid var(--navy);padding:12px 0}
+summary{cursor:pointer;color:#fff;font-weight:600}
+details p{color:var(--mu);margin-top:6px;font-size:16px}
+.note{margin-top:34px;padding:16px;border-radius:16px;background:var(--navy);font-size:16px}
+</style>
+</head>
+<body>
+<main>
+<h1>HafizZone</h1>
+<p class="lead">নিজের ID দিয়ে বন্ধুদের সাথে চ্যাট করো।</p>
+
+<div class="chat" aria-hidden="true">
+  <div class="b fr">ID কী দিয়েছিস?</div>
+  <div class="b me">hafiz_007, সার্চ কর</div>
+  <div class="b fr">পেয়েছি, মেসেজ দিলাম</div>
+</div>
+
+<a class="dl" id="dl" href="https://github.com/skarif0187-cpu/HafizZone1/releases/latest/download/app-debug.apk">ডাউনলোড করো</a>
+<p class="meta" id="meta">Android ফোনের জন্য, সাইজ প্রায় ৪ MB</p>
+
+<h2>ইনস্টল করার নিয়ম</h2>
+<ol>
+<li>ওপরের <b>ডাউনলোড করো</b> বাটন চাপো। ফাইলের নাম app-debug.apk।</li>
+<li>ডাউনলোড শেষ হলে ফাইলটা খুলে <b>Install</b> চাপো।</li>
+<li>অ্যাপ খুলে <b>Create account</b> চাপো। নাম, পছন্দের ID, ইমেইল আর ৬ অক্ষরের পাসওয়ার্ড দাও।</li>
+<li><b>Allow notifications</b> এলে Allow চাপো, নইলে মেসেজের নোটিফিকেশন পাবে না।</li>
+<li>নিচে <b>Find</b> ট্যাবে বন্ধুর ID লিখে Search করো, তারপর Message চাপো।</li>
+</ol>
+
+<h2>সমস্যা হলে</h2>
+<details><summary>"এই ফাইল ক্ষতি করতে পারে" লিখে আসছে</summary><p><b>Keep</b> বা <b>Download anyway</b> চাপো। অ্যাপটা Play Store-এ নেই বলেই এই সতর্কতা আসে।</p></details>
+<details><summary>"Install unknown apps" বা ইনস্টল নিষিদ্ধ লিখে আসছে</summary><p><b>Settings</b> চাপো, <b>Allow from this source</b> চালু করে Back দিয়ে আবার Install চাপো।</p></details>
+<details><summary>Play Protect সতর্কতা দিচ্ছে</summary><p><b>More details</b> চেপে <b>Install anyway</b> চাপো।</p></details>
+<details><summary>"App not installed" আসছে</summary><p>আগের HafizZone অ্যাপ থাকলে Uninstall করে নতুনটা ইনস্টল করো। ফোনের জায়গা (storage) কম থাকলে কিছু ফাইল মুছো। ডাউনলোড অর্ধেক হলে আবার নামাও।</p></details>
+<details><summary>"This ID is already taken" আসছে</summary><p>অন্য একটা ID বেছে নাও, যেমন নামের সাথে সংখ্যা জুড়ে। ID-তে ছোট হাতের ইংরেজি অক্ষর, সংখ্যা আর _ চলবে।</p></details>
+<details><summary>বন্ধুর ID সার্চ করলে "No user found" আসছে</summary><p>ID ছোট হাতের অক্ষরে লেখো, স্পেস বা @ ছাড়া। বন্ধু অ্যাকাউন্ট খুলেছে কিনা দেখো।</p></details>
+<details><summary>নোটিফিকেশন আসছে না</summary><p>Settings → Apps → HafizZone → Notifications চালু আছে কিনা দেখো। একই জায়গায় Battery-তে <b>Unrestricted</b> বেছে নাও। Xiaomi, Oppo, Vivo, Realme ফোনে Autostart চালু করো। অ্যাপ Force stop করবে না, আর লগআউট করা থাকলে নোটিফিকেশন আসবে না।</p></details>
+<details><summary>মেসেজ যাচ্ছে না</summary><p>ইন্টারনেট (ডাটা বা ওয়াইফাই) চালু আছে কিনা দেখো, তারপর আবার Send চাপো। অ্যাপ চালাতে সবসময় ইন্টারনেট লাগে।</p></details>
+
+<p class="note">নতুন ভার্সন এলে আগের অ্যাপ Uninstall করে নতুনটা ইনস্টল করো। একই ইমেইল আর পাসওয়ার্ডে লগইন করলে অ্যাকাউন্ট আর মেসেজ ফিরে পাবে। iPhone-এ এই অ্যাপ চলে না।</p>
+</main>
+<script>
+fetch("https://api.github.com/repos/skarif0187-cpu/HafizZone1/releases/latest")
+.then(r=>r.json()).then(j=>{
+  if(!j.tag_name)return;
+  var a=(j.assets||[]).find(function(x){return x.name==="app-debug.apk"});
+  var mb=a?Math.round(a.size/1048576*10)/10:null;
+  document.getElementById("meta").textContent="সর্বশেষ ভার্সন "+j.tag_name+(mb?", সাইজ প্রায় "+mb+" MB":"")+", Android ফোনের জন্য";
+}).catch(function(){});
+</script>
+</body>
+</html>
