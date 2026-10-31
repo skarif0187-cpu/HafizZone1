@@ -20,7 +20,7 @@ jobs:
       - run: cd HafizZone && npm install && npx cap add android && npx cap sync android
       - run: cp google-services.json HafizZone/android/app/google-services.json
       - run: mkdir -p HafizZone/android/app/src/main/res/raw && cp hafiz_tone.wav HafizZone/android/app/src/main/res/raw/hafiz_tone.wav
-      - run: sed -i 's#<application#<uses-permission android:name="android.permission.POST_NOTIFICATIONS" />\n    <application#' HafizZone/android/app/src/main/AndroidManifest.xml
+      - run: sed -i 's#<application#<uses-permission android:name="android.permission.POST_NOTIFICATIONS" />\n    <uses-permission android:name="android.permission.RECORD_AUDIO" />\n    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />\n    <application#' HafizZone/android/app/src/main/AndroidManifest.xml
       - run: cd HafizZone/android && chmod +x gradlew && ./gradlew assembleDebug
       - uses: actions/upload-artifact@v4
         with:
